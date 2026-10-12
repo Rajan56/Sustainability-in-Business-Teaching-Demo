@@ -2,8 +2,8 @@
   --paper:#EEF1EC; --panel:#F8FAF7; --ink:#1C2321; --ink-soft:#4A5550;
   --spruce:#2F5D50; --spruce-soft:#DCE6DF; --amber:#9A6514; --amber-soft:#F3E6CF;
   --berry:#9E3A48; --berry-soft:#F2DDE0; --line:#C3CCC5;
-  --serif:"Newsreader", Georgia, "Times New Roman", serif;
-  --sans:"Public Sans", "Segoe UI", system-ui, sans-serif;
+  --serif:Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root{ --paper:#141A18; --panel:#1B2320; --ink:#E4EAE5; --ink-soft:#AEB9B2;
@@ -13,6 +13,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important;animation:none!important} }
+html{font-size:17.5px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.125rem;line-height:1.6}
 a{color:var(--spruce);text-underline-offset:3px}
 :focus-visible{outline:3px solid var(--amber);outline-offset:2px}
@@ -25,7 +26,7 @@ nav.toc a{color:var(--ink-soft);text-decoration:none}
 nav.toc a:hover{color:var(--spruce);text-decoration:underline}
 
 .hero{padding:72px 0 56px}
-.hero h1{font-weight:500;font-size:clamp(3rem,9vw,6.4rem);line-height:.98;letter-spacing:-.02em;margin:0 0 22px;max-width:11ch}
+.hero h1{font-weight:700;font-size:clamp(2.5rem,6.5vw,4.6rem);line-height:1.04;letter-spacing:-.015em;margin:0 0 22px;max-width:14ch}
 .hero .answer{font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.4;max-width:34ch;margin:0 0 28px;color:var(--ink-soft)}
 .hero .answer b{color:var(--ink);font-weight:600}
 .hero .lede{max-width:62ch;margin:0 0 26px}
@@ -35,7 +36,7 @@ nav.toc a:hover{color:var(--spruce);text-decoration:underline}
 .note{font-family:var(--sans);font-size:.85rem;color:var(--ink-soft)}
 
 section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-weight:500;font-size:clamp(1.8rem,3.6vw,2.5rem);line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
+h2{font-weight:700;font-size:clamp(1.8rem,3.6vw,2.5rem);line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
 h3{font-weight:600;font-size:1.25rem;margin:28px 0 8px}
 p{margin:0 0 14px}
 
